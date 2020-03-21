@@ -16,6 +16,10 @@ import { ErrorComponent } from './layouts/error/error.component';
 import { CompanyPageComponent } from './pages/company-page/company-page.component';
 import { CompanyOfferPageComponent } from './pages/company-offer-page/company-offer-page.component';
 import { UserProfilePageComponent } from './pages/user-profile-page/user-profile-page.component';
+import { UserService } from './core/user/user.service';
+import { UserServiceMock } from './services/user.service.mock';
+import { CompanyService } from './services/company.service';
+import { CompanyServiceMock } from './services/company.service.mock';
 
 const PAGES = [CompanyPageComponent, CompanyOfferPageComponent, UserProfilePageComponent];
 
@@ -28,6 +32,10 @@ const PAGES = [CompanyPageComponent, CompanyOfferPageComponent, UserProfilePageC
     // jhipster-needle-angular-add-module JHipster will add new module here
     SharinghumanresourcesEntityModule,
     SharinghumanresourcesAppRoutingModule
+  ],
+  providers: [
+    { provide: UserService, useClass: UserServiceMock },
+    { provide: CompanyService, useClass: CompanyServiceMock }
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, PAGES],
   bootstrap: [MainComponent]
