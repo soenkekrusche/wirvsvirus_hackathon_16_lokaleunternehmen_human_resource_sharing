@@ -140,8 +140,8 @@ insert into offer (id, title, address, description, telefon_number) values (2, '
 insert into offer (id, title, address, description, telefon_number) values (3, 'Wände streichen', 'Hinter dem Berg 92, 76503 Karlshausen', 'Wir sind ein kleines Unternehmen, das Wände streicht', '20948/12946');
 
 insert into offer_company_name (id, offer, company_name) values (1, 1, 3);
-insert into offer_company_name (id, offer, company_name) values (1, 2, 2);
-insert into offer_company_name (id, offer, company_name) values (1, 3, 1);
+insert into offer_company_name (id, offer, company_name) values (2, 2, 2);
+insert into offer_company_name (id, offer, company_name) values (3, 3, 1);
 
 insert into company_employment_style (id, company, employment_style) values (1, 1, 1);
 insert into company_employment_style (id, company, employment_style) values (2, 2, 2);
@@ -156,8 +156,8 @@ insert into company_working_style (id, company, working_style) values (2, 2, 1);
 insert into company_working_style (id, company, working_style) values (3, 3, 2);
 
 insert into user_profile (id, firstname, lastname, address, experience_in_years, about_me, telefon_number, jhi_user_id) values (1, 'Max', 'Mustermann', 'Musterstraße 1, 1234 Musterhausen', 2, 'Ich lese gern und arbeite gern mit Menschen', '73592/02345', 3);
-insert into user_profile (id, firstname, lastname, address, experience_in_years, about_me, telefon_number, jhi_user_id) values (2, 'Elfriede', 'Elfenbein', 'Auf der Mauer 12, 87341 Hanshausen', 34, 'Ich bin ganz nett', '92052/01630', 3);
-insert into user_profile (id, firstname, lastname, address, experience_in_years, about_me, telefon_number, jhi_user_id) values (3, 'Anton', 'Austirol', 'Eine Insel 23, 73029 Mitzweibergen', 8, 'Ich höre gern Musik', '86205/01361', 3);
+insert into user_profile (id, firstname, lastname, address, experience_in_years, about_me, telefon_number, jhi_user_id) values (2, 'Elfriede', 'Elfenbein', 'Auf der Mauer 12, 87341 Hanshausen', 34, 'Ich bin ganz nett', '92052/01630', 1);
+insert into user_profile (id, firstname, lastname, address, experience_in_years, about_me, telefon_number, jhi_user_id) values (3, 'Anton', 'Austirol', 'Eine Insel 23, 73029 Mitzweibergen', 8, 'Ich höre gern Musik', '86205/01361', 2);
 
 insert into user_employment_style (id, user, employment_style) values (1, 1, 1);
 insert into user_employment_style (id, user, employment_style) values (2, 2, 2);
