@@ -96,6 +96,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
+    "ng": "ng",
     "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,css,scss,yml}\"",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
