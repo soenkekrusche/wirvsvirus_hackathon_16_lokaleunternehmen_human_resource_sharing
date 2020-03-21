@@ -1,1 +1,8 @@
-<p>company-offer-page works!</p>
+<p *ngIf="profile$ | async as profile">
+    {{ profile | json }}
+</p>
+<ul>
+    <li *ngFor="let offer of offers$ | async">
+        {{ offer | json }}
+    </li>
+</ul>

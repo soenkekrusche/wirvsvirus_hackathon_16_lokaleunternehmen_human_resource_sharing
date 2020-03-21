@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CompanyService } from 'app/services/company.service';
+import { Observable } from 'rxjs';
+import { CompanyProfile, Offer } from 'app/types';
 
 @Component({
   selector: 'jhi-company-offer-page',
@@ -6,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-offer-page.component.scss']
 })
 export class CompanyOfferPageComponent implements OnInit {
-  constructor() {}
+  public profile$: Observable<CompanyProfile> | undefined;
+  public offers$: Observable<Offer[]> | undefined;
 
-  ngOnInit(): void {}
+  constructor(private service: CompanyService) {}
+
+  ngOnInit(): void {
+    const sampleCompanyId = 'foo';
+    this.offers$ = this.service.getOffers(sampleCompanyId);
+    this.profile$ = this.service.getProfile(sampleCompanyId);
+  }
 }
