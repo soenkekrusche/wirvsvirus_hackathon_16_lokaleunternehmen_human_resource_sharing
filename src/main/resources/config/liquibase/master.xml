@@ -17,8 +17,8 @@
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 
-<!--    <changeSet id="irgendwas" author="sönke">-->
-<!--        <sqlFile path="123" relativeToChangelogFile="true"></sqlFile>-->
-<!--    </changeSet>-->
+    <changeSet id="init.sql" author="lisa">
+        <sqlFile path="changelog/init.sql" relativeToChangelogFile="true"></sqlFile>
+    </changeSet>
 
 </databaseChangeLog>
