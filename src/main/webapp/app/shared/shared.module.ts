@@ -10,6 +10,6 @@ import { AvatarComponent } from './components/avatar/avatar.component';
   imports: [SharinghumanresourcesSharedLibsModule],
   declarations: [AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective, AvatarComponent],
   entryComponents: [LoginModalComponent],
-  exports: [SharinghumanresourcesSharedLibsModule, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective]
+  exports: [SharinghumanresourcesSharedLibsModule, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective, AvatarComponent]
 })
 export class SharinghumanresourcesSharedModule {}

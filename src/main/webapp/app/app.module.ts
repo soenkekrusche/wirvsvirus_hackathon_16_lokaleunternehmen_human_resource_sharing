@@ -28,16 +28,18 @@ const PAGES = [CompanyPageComponent, CompanyOfferPageComponent, UserProfilePageC
     BrowserModule,
     SharinghumanresourcesSharedModule,
     SharinghumanresourcesCoreModule,
-    SharinghumanresourcesHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     SharinghumanresourcesEntityModule,
     SharinghumanresourcesAppRoutingModule
   ],
   providers: [
-    { provide: UserService, useClass: UserServiceMock },
-    { provide: CompanyService, useClass: CompanyServiceMock }
+    {provide: UserService, useClass: UserServiceMock},
+    {provide: CompanyService, useClass: CompanyServiceMock}
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, PAGES],
+  exports: [
+    CompanyPageComponent
+  ],
   bootstrap: [MainComponent]
 })
 export class SharinghumanresourcesAppModule {}

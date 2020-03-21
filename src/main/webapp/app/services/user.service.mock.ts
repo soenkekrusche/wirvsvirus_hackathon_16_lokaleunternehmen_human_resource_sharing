@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { CompanyProfile } from '../types';
+import {CompanyProfile, UserProfile} from '../types';
 import { SAMPLE_USER_PROFILE } from './mocks';
 
 @Injectable({
@@ -8,6 +8,7 @@ import { SAMPLE_USER_PROFILE } from './mocks';
 })
 export class UserServiceMock {
   public getProfile(userId: string): Observable<UserProfile> {
+    console.log(`Get profile for user with id '${userId}'.`);
     console.log(`Get profile for user with id '${userId}'.`);
     return of(SAMPLE_USER_PROFILE);
   }
