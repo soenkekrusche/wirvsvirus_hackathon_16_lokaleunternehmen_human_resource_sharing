@@ -1,3 +1,6 @@
+// TODO: wuerfelda: Will be fixed if implemented.
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CompanyProfile, Offer } from '../types';
