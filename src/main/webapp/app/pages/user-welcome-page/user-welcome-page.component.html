@@ -1,1 +1,9 @@
-<p>user-welcome-page works!</p>
+<h1>Wer bist du?</h1>
+
+<jhi-upload-photo></jhi-upload-photo>
+
+<input type="text" placeholder="Vorname" [(ngModel)]="firstName">
+<input type="text" placeholder="Nachname" [(ngModel)]="lastName">
+<input type="text" placeholder="PLZ / Ort" [(ngModel)]="address">
+
+<button [disabled]="!canContinue" (click)="continue()">weiter</button>
