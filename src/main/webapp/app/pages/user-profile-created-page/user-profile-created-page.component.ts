@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'jhi-user-profile-created-page',
   templateUrl: './user-profile-created-page.component.html',
   styleUrls: ['./user-profile-created-page.component.scss']
 })
-export class UserProfileCreatedPageComponent implements OnInit {
-  constructor() {}
+export class UserProfileCreatedPageComponent {
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  public continue(): void {
+    this.router.navigate(['offers-search']);
+  }
 }

@@ -6,6 +6,7 @@ import { UserWelcomePageComponent } from './user-welcome-page/user-welcome-page.
 import { UserHelpHowPageComponent } from './user-help-how-page/user-help-how-page.component';
 import { UserProfileCreatedPageComponent } from './user-profile-created-page/user-profile-created-page.component';
 import { UserHelpWhenPageComponent } from './user-help-when-page/user-help-when-page.component';
+import { OffersSearchPageComponent } from './offers-search-page/offers-search-page.component';
 
 const ROUTES: Routes = [
   {
@@ -46,6 +47,14 @@ const ROUTES: Routes = [
     data: {
       authorities: [],
       pageTitle: 'Wann kannst du helfen?'
+    }
+  },
+  {
+    path: 'offers-search',
+    component: OffersSearchPageComponent,
+    data: {
+      authorities: [],
+      pageTitle: 'Suche nach Stellen.'
     }
   }
 ];
