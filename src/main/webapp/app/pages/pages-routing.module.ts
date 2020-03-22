@@ -6,16 +6,13 @@ import { UserWelcomePageComponent } from './user-welcome-page/user-welcome-page.
 import { UserHelpHowPageComponent } from './user-help-how-page/user-help-how-page.component';
 import { UserProfileCreatedPageComponent } from './user-profile-created-page/user-profile-created-page.component';
 import { UserHelpWhenPageComponent } from './user-help-when-page/user-help-when-page.component';
-import { OffersSearchPageComponent } from './offers-search-page/offers-search-page.component';
+import { CompanySearchPageComponent } from './company-search-page/company-search-page.component';
 
 const ROUTES: Routes = [
   {
     path: '',
-    component: CompanyOfferPageComponent,
-    data: {
-      authorities: [],
-      pageTitle: 'Angebote'
-    }
+    pathMatch: 'full',
+    redirectTo: 'welcome'
   },
   {
     path: 'welcome',
@@ -50,11 +47,19 @@ const ROUTES: Routes = [
     }
   },
   {
-    path: 'offers-search',
-    component: OffersSearchPageComponent,
+    path: 'company-search',
+    component: CompanySearchPageComponent,
     data: {
       authorities: [],
       pageTitle: 'Suche nach Stellen.'
+    }
+  },
+  {
+    path: 'company-offer/:id',
+    component: CompanyOfferPageComponent,
+    data: {
+      authorities: [],
+      pageTitle: 'Das sind die Angebote.'
     }
   }
 ];

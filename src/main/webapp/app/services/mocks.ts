@@ -2,6 +2,7 @@ import { CompanyProfile } from '../types/company-profile';
 import { Offer, UserProfile } from '../types';
 
 export const SAMPLE_COMPANY_PROFILE: CompanyProfile = {
+  id: '42',
   name: 'Bauer um die Ecke',
   address: '50677 Köln',
   imgSrc: 'https://via.placeholder.com/48'

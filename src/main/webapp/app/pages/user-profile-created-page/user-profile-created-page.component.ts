@@ -10,6 +10,6 @@ export class UserProfileCreatedPageComponent {
   constructor(private router: Router) {}
 
   public continue(): void {
-    this.router.navigate(['offers-search']);
+    this.router.navigate(['company-search']);
   }
 }

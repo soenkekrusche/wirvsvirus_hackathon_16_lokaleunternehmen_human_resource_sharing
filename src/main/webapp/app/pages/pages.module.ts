@@ -9,9 +9,9 @@ import { UserWelcomePageComponent } from './user-welcome-page/user-welcome-page.
 import { UserHelpHowPageComponent } from './user-help-how-page/user-help-how-page.component';
 import { UserHelpWhenPageComponent } from './user-help-when-page/user-help-when-page.component';
 import { UserProfileCreatedPageComponent } from './user-profile-created-page/user-profile-created-page.component';
-import { OffersSearchPageComponent } from './offers-search-page/offers-search-page.component';
 import { UserProfileCompetencesPageComponent } from './user-profile-competences-page/user-profile-competences-page.component';
 import { MatchPageComponent } from './match-page/match-page.component';
+import { CompanySearchPageComponent } from './company-search-page/company-search-page.component';
 
 const PAGES = [
   CompanyPageComponent,
@@ -21,13 +21,13 @@ const PAGES = [
   UserHelpHowPageComponent,
   UserHelpWhenPageComponent,
   UserProfileCreatedPageComponent,
-  OffersSearchPageComponent,
+  CompanySearchPageComponent,
   UserProfileCompetencesPageComponent,
   MatchPageComponent
 ];
 
 @NgModule({
   imports: [SharinghumanresourcesSharedModule, PagesRoutingModule],
-  declarations: [PAGES]
+  declarations: [PAGES, CompanySearchPageComponent]
 })
 export class PagesModule {}

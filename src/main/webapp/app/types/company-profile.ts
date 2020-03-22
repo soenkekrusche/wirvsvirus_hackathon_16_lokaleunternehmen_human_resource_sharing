@@ -1,5 +1,5 @@
 export interface CompanyProfile {
-  // id: string;
+  id: string;
   name: string;
   address: string;
   imgSrc: string;
