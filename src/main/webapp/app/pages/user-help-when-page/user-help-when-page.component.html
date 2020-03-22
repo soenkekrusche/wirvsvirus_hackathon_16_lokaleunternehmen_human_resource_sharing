@@ -1,5 +1,10 @@
-<h1>Wann kannst du helfen?</h1>
+<h1 class="text-center">Wie kannst du helfen?</h1>
 
 <input type="date" [(ngModel)]="availableDate">
 
-<button [disabled]="!canContinue" (click)="continue()">weiter</button>
+<div class="row justify-content-center">
+    <button class="btn btn-secondary btn-lg rounded-pill" [disabled]="!canContinue"
+            (click)="continue()">
+        Weiter
+    </button>
+</div>
