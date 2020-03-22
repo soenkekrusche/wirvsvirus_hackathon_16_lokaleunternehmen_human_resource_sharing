@@ -1,1 +1,11 @@
-<p>user-help-how-page works!</p>
+<h1>Wie kannst du helfen?</h1>
+
+<ul>
+  <li *ngFor="let competence of competences$ | async">
+    <button (click)="addCompetence(competence)">{{ competence }}</button>
+  </li>
+  <!-- TODO: wuerfelda: Will be integrated later. -->
+  <!-- <jhi-competence-list-entry *ngFor="let competence of competences$ | async"></jhi-competence-list-entry> -->
+</ul>
+
+<button [disabled]="!canContinue" (click)="continue()">weiter</button>
