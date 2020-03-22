@@ -1,7 +1,10 @@
+// Should be ok because this is just a Mock.
+/* eslint-disable no-console */
+
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { CompanyProfile } from '../types';
 import { SAMPLE_USER_PROFILE } from './mocks';
+import { UserProfile } from '../types';
 
 @Injectable({
   providedIn: 'root'
