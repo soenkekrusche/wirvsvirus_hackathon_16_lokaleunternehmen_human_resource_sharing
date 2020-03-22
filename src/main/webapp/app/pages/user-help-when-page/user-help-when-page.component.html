@@ -1,1 +1,5 @@
-<p>user-help-when-page works!</p>
+<h1>Wann kannst du helfen?</h1>
+
+<input type="date" [(ngModel)]="availableDate">
+
+<button [disabled]="!canContinue" (click)="continue()">weiter</button>
